@@ -1,0 +1,113 @@
+/* ====== HEADER ====== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #f5f3ee;
+}
+
+.logo img {
+  height: 50px;
+  color: #4b5320;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav a:hover,
+.nav .active {
+  color: #4b5320;
+  font-weight: bold;
+}
+
+/* ====== HERO ====== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("https://www.jardineriaon.com/wp-content/uploads/2020/07/flores-del-sauco.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* ====== EQUIPO ====== */
+.equipo {
+  background: #f0ebe4;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.equipo h2 {
+  font-size: 2.5rem;
+  color: #4b2e0e;
+  margin-bottom: 50px;
+}
+
+.equipo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.miembro img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+
+.miembro h3 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.miembro p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .equipo h2 {
+    font-size: 2rem;
+  }
+}
